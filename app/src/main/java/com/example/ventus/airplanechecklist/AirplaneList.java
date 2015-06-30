@@ -20,11 +20,11 @@ public class AirplaneList extends Activity {
         AdapterView.OnItemClickListener myAirplaneClick = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView debugging_text_view = (TextView) findViewById(R.id.debugging);
+//                TextView debugging_text_view = (TextView) findViewById(R.id.debugging);
                 TextView item_text_view  = (TextView) view;
 //                debugging_text_view.setText(item_text_view.getText());
                 if (item_text_view.getText().equals("LS3")) {
-                    debugging_text_view.setText("yes, in LS3");
+//                    debugging_text_view.setText("yes, in LS3");
                     launch_ls3();
                 }
                 if (item_text_view.getText().equals("Cessna C150")) {
